@@ -16,7 +16,9 @@ const config: Config = {
       },
     },
     colors: {
+      transparent: "transparent",
       white: "#FFFFFF",
+      black: "#000000",
       primary: {
         50: "var(--primary-50)",
         100: "var(--primary-100)",
@@ -117,9 +119,9 @@ const config: Config = {
         dialogContentShow: {
           from: {
             opacity: "0",
-            transform: "translate(-50%, -45%) scale(0.95)",
+            transform: "scale(0.95)",
           },
-          to: { opacity: "1", transform: "translate(-50%, -50%) scale(1)" },
+          to: { opacity: "1", transform: "scale(1)" },
         },
       },
       animation: {

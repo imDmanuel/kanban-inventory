@@ -49,7 +49,7 @@ export default function LowQualityStock() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-[64px_1fr_30px] items-center">
+      <div className="grid grid-cols-[64px_1fr_45px] items-center">
         {data.map((item) => (
           <>
             <div className="w-16">

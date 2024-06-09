@@ -1,3 +1,5 @@
+"use client";
+
 import * as TabsPrimitives from "@radix-ui/react-tabs";
 import React from "react";
 
@@ -28,15 +30,15 @@ const variantStyles: Record<TabsListVariant, string> = {
     // base
     "flex items-center justify-start border-b",
     // border color
-    "border-gray-200 dark:border-gray-800"
+    "border-grey-50 -dark:border-grey-800"
   ),
   solid: cx(
     // base
     "inline-flex items-center justify-center rounded-md p-1",
     // border color
-    // "border-gray-200 dark:border-gray-800",
+    // "border-grey-200 -dark:border-grey-800",
     // background color
-    "bg-gray-100 dark:bg-gray-800"
+    "bg-grey-100 -dark:bg-grey-800"
   ),
 };
 
@@ -62,33 +64,33 @@ function getVariantStyles(tabVariant: TabsListVariant) {
     case "line":
       return cx(
         // base
-        "-mb-px items-center justify-center whitespace-nowrap border-b-2 border-transparent px-3 pb-3 text-sm font-medium transition-all",
+        "-mb-px items-center justify-center whitespace-nowrap border-b-2 border-transparent pb-2 text-sm font-medium transition-all",
         // text color
-        "text-gray-500 dark:text-gray-500",
+        "text-grey-500 --dark:text-grey-500",
         // hover
-        "hover:text-gray-700 hover:dark:text-gray-400",
+        "hover:text-grey-700 hover:--dark:text-grey-400",
         // border hover
-        "hover:border-gray-300 hover:dark:border-gray-400",
+        // "hover:border-grey-300 hover:--dark:border-grey-400",
         // selected
-        "data-[state=active]:border-gray-900 data-[state=active]:text-gray-900",
-        "data-[state=active]:dark:border-gray-50 data-[state=active]:dark:text-gray-50",
+        "data-[state=active]:border-primary-600 data-[state=active]:text-grey-700",
+        "data-[state=active]:--dark:border-grey-50 data-[state=active]:--dark:text-grey-50",
         // disabled
         "disabled:pointer-events-none",
-        "disabled:text-gray-300 disabled:dark:text-gray-700"
+        "disabled:text-grey-300 disabled:--dark:text-grey-700"
       );
     case "solid":
       return cx(
         // base
         "inline-flex items-center justify-center whitespace-nowrap rounded px-3 py-1 transition-all text-sm font-medium",
         // text color
-        "text-gray-500 dark:text-gray-400",
+        "text-grey-500 -dark:text-grey-400",
         // hover
-        "hover:text-gray-700 hover:dark:text-gray-200",
+        "hover:text-grey-700 hover:--dark:text-grey-200",
         // selected
-        " data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow",
-        "data-[state=active]:dark:bg-gray-900 data-[state=active]:dark:text-gray-50",
+        " data-[state=active]:bg-white data-[state=active]:text-grey-900 data-[state=active]:shadow",
+        "data-[state=active]:--dark:bg-grey-900 data-[state=active]:--dark:text-grey-50",
         // disabled
-        "disabled:pointer-events-none disabled:text-gray-400 disabled:dark:text-gray-600 disabled:opacity-50"
+        "disabled:pointer-events-none disabled:text-grey-400 disabled:--dark:text-grey-600 disabled:opacity-50"
       );
   }
 }

@@ -74,7 +74,7 @@ export default function Sidebar() {
         </h2>
         {/* END LOGO */}
       </div>
-      <ScrollArea className="pt-5 flex-1 overflow-y-auto max-h-[calc(100dvh_-_var(--navbar-height))] [&>div]:h-full [&>div>div]:h-full">
+      <ScrollArea className="pt-3 flex-1 overflow-y-auto max-h-[calc(100dvh_-_var(--navbar-height))] [&>div]:h-full [&>div>div]:h-full">
         <div className="flex flex-col h-full justify-between">
           {/* SIDEBAR LINKS */}
           <ul className="">

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white w-full">
+    <nav className="bg-white w-full border-b border-b-grey-50">
       <div className="container flex items-center h-[--navbar-height]">
         <Input
           placeholder="Search product, supplier,order"

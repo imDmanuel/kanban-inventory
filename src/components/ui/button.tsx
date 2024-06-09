@@ -18,16 +18,28 @@ const buttonVariants = tv({
   ],
   variants: {
     variant: {
-      outline: [],
+      outline: [
+        // border
+        "border border-grey-100",
+        // text color
+        "text-grey-600 -dark::text-grey-900",
+        // background color
+        "bg-transparent -dark::bg-grey-50",
+        // hover color
+        "hover:bg-grey-50 -dark::hover:bg-grey-200",
+        // disabled
+        "disabled:bg-grey-100 disabled:text-grey-400",
+        "disabled:-dark::bg-grey-800 disabled:-dark::text-grey-600",
+      ],
       primary: [
         // border
         "border-transparent",
         // text color
         "text-white -dark::text-grey-900",
         // background color
-        "bg-grey-900 -dark::bg-grey-50",
+        "bg-primary-600 -dark::bg-grey-50",
         // hover color
-        "hover:bg-grey-800 -dark::hover:bg-grey-200",
+        "hover:bg-primary-500 -dark::hover:bg-grey-200",
         // disabled
         "disabled:bg-grey-100 disabled:text-grey-400",
         "disabled:-dark::bg-grey-800 disabled:-dark::text-grey-600",

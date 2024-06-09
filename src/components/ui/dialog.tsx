@@ -33,9 +33,9 @@ const DialogOverlay = React.forwardRef<
       ref={forwardedRef}
       className={cx(
         // base
-        "fixed inset-0 z-50 overflow-y-auto",
+        "fixed inset-0 z-50 overflow-y-auto grid place-items-center",
         // background color
-        "bg-black/70",
+        "bg-black/30 backdrop-blur-sm",
         // transition
         "data-[state=open]:animate-dialogOverlayShow",
         className
@@ -58,11 +58,11 @@ const DialogContent = React.forwardRef<
           ref={forwardedRef}
           className={cx(
             // base
-            "fixed left-1/2 top-1/2 z-50 w-[95vw] max-w-lg -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-md border p-6 shadow-lg",
+            "relative z-50 w-[95vw] max-w-lg rounded-md border p-6 shadow-lg",
             // border color
-            "border-gray-200 dark:border-gray-900 ",
+            "border-grey-200 -dark:border-grey-900 ",
             // background color
-            " bg-white dark:bg-[#090E1A]",
+            " bg-white -dark:bg-[#090E1A]",
             // transition
             "data-[state=open]:animate-dialogContentShow",
             focusRing,
@@ -96,7 +96,7 @@ const DialogTitle = React.forwardRef<
       // base
       "text-lg font-semibold",
       // text color
-      "text-gray-900 dark:text-gray-50",
+      "text-grey-900 -dark:text-grey-50",
       className
     )}
     {...props}
@@ -112,7 +112,7 @@ const DialogDescription = React.forwardRef<
   return (
     <DialogPrimitives.Description
       ref={forwardedRef}
-      className={cx("text-gray-500 dark:text-gray-500", className)}
+      className={cx("text-grey-500 -dark:text-grey-500", className)}
       {...props}
     />
   );
