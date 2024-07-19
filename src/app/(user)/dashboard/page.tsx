@@ -12,7 +12,7 @@ export default function Dashboard() {
   return (
     <section>
       <div className="container py-6">
-        <div className="grid grid-cols-[4fr_2fr] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[4fr_2fr] gap-6">
           <div className="space-y-6">
             <SalesOverviewPanel />
 

@@ -29,11 +29,8 @@ export default function ProductInfo() {
             <Button>Download</Button>
           </div>
 
-          <Tabs>
-            <TabsList
-              defaultValue={"overview"}
-              className="text-grey-700 font-normal gap-x-12 border-b-grey-50"
-            >
+          <Tabs defaultValue="overview">
+            <TabsList className="text-grey-700 font-normal gap-x-12 border-b-grey-50">
               <TabsTrigger value="overview" className="px-0">
                 Overview
               </TabsTrigger>
@@ -125,7 +122,7 @@ export default function ProductInfo() {
                       <Image src={productImage} alt="" />
                     </div>
 
-                    <Table className="[&_tr]:border-none border-none text-grey-400 font-light">
+                    <Table className="[&_tr]:border-none border-none text-grey-400">
                       <TableBody>
                         <TableRow>
                           <TableCell>Opening Stock</TableCell>

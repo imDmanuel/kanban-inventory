@@ -9,7 +9,7 @@ export default function Login() {
     <main>
       <div className="flex items-center min-h-dvh">
         {/* LEFT SECTION */}
-        <div className="flex flex-col items-center flex-1 gap-y-8">
+        <div className="hidden lg:flex flex-col items-center flex-1 gap-y-8">
           <Image src={Logo} alt="" className="w-64" />
           <p className="text-[#009ED8] font-semibold text-5xl">KANBAN</p>
         </div>

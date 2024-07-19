@@ -69,7 +69,7 @@ const TableHeaderCell = React.forwardRef<
     ref={forwardedRef}
     className={cx(
       // base
-      "border-b px-4 py-3.5 text-left text-sm font-semibold",
+      "border-b px-4 first:pl-0 py-3.5 text-left text-sm font-semibold",
       // border color
       "border-grey-50 -dark:border-grey-800",
       className
@@ -110,7 +110,8 @@ const TableRow = React.forwardRef<
     ref={forwardedRef}
     className={cx(
       "[&_td:last-child]:pr-4 [&_th:last-child]:pr-4",
-      "[&_td:first-child]:pl-4 [&_th:first-child]:pl-4",
+      "[&_td:first-child]:pl-0 [&_th:first-child]:pl-0",
+      // "[&_td:first-child]:pl-4 [&_th:first-child]:pl-4",
       className
     )}
     {...props}
